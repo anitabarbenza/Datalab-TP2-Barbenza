@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;500&family=Work+Sans:wght@100;300;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    margin: 0;
+    background-color: white;
+}
+
+nav {
+    color: white;
+    width: 100vw;
+    height: 18.83vh;
+    background-color: #e8c9bf;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.mostrar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: fixed;
+    left: 0;
+    top: 19vh;
+    background-color: #e8c9bf;
+    width: 100vw;
+    padding: 2vw;
+    min-height: 30vh;
+
+}
+
+nav div {
+
+    display: flex;
+    width: 24.11%;
+    justify-content: space-between;
+
+}
+
+
+
+nav,
+header,
+main {
+    width: 100vw;
+    padding: 0 8.33vw;
+}
+
+section { 
+    width: 100%;
+    display: flex;
+   justify-content: space-between;
+   flex-wrap:wrap;
+   align-content: space-around;
+   height: 100 vh;
+
+}
+
+main div {
+    width: 45.83%;
+
+}
+
+div img, video {
+
+width: 100%;
+
+}
+
+header {
+    height: 45.30vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    
+}
+
+h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+h1,
+header h3,
+nav a,
+header a {
+    line-height: 125%;
+}
+
+nav h1 {
+
+    font-weight: 500;
+
+
+
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;;
+    color: #e8c9bf;
+}
+
+header h3 {
+    text-transform: uppercase;
+    color:#e8c9bf;
+    letter-spacing: 5px;
+
+}
+
+header p {
+    font-size: 20px;
+    color: #e8c9bf;
+    font-family: 'Poppins', sans-serif;;
+    font-size: 20px;
+    letter-spacing: 2px;
+    
+}
+
+
+header a,
+nav a {
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+a:hover {
+    color: #e8c9bf
+}
+
+
+.logo {
+    width: 110px;
+    height: 90px;
+    background-image: url('path/to/fotologo.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: rotate 3s linear infinite;
+    animation-delay: 3s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+header a {
+
+    background-color: white;
+
+}
+
+nav span {
+    display: none;
+}
+
+
+
+.icon-menu::before {
+
+    color: white;
+    font-size: 4vw;
+
+
+}
+
+span.icon-menu:hover {
+    cursor: pointer;
+    
+
+
+}
+
+
+.lightboxOverlay { background-color: #fdfdfd;
+  
+
+}
+
+@media(max-width: 1024px) {
+  
+    nav div {
+        width: 50%;
+        
+    }
+
+    header, section { 
+        margin-bottom: 20px;
+        height: auto;}
+
+}
+
+
+@media (max-width: 768px) {
+
+    nav div {
+        display: none;
+    }
+
+   
+
+    nav span {
+        display: inline;
+    }
+
+    section div {
+    width: 100%;
+    margin-bottom: 2vh;
+    }
+
+}
+footer {
+    
+    background-color: #e8c9bf;
+    color: white;
+    font-family: 'Crimson Text', serif;
+    padding: 80px;
+    text-align: center;
+    font-size: 600;
+    letter-spacing: 5Px;
+  }
+  
